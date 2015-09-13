@@ -1,0 +1,154 @@
+/***************************
+GENERAL
+****************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+	font-family: Georgia, serif;
+}
+
+
+
+/***************************
+HEADING
+****************************/
+
+h1 {
+	text-align: center;
+}
+blockquote, .instructions {
+  margin: 0 auto;
+  max-width: 900px;
+  color: #666;
+  text-align: justify;
+}
+
+blockquote a{
+  text-decoration: none;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+.instructions {
+	color: initial;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+
+/***************************
+WORKSPACE
+****************************/
+
+.workspace {
+	width: 899px; /* When width is set to even numbers, background color doesn't fill all of 4th column */
+	height: 600px;
+	margin: 20px auto 60px;
+	padding: 40px;
+	background-color: #C5C5C5;
+	box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+.canvas {
+	float: right;
+	width: 80%;
+	height: 100%;
+	background-color: #fff;
+	border: 10px solid black;
+}
+
+
+
+/***************************
+CONTROLS
+****************************/
+
+.controls {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.controls li {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+	border-radius: 100%;
+}
+.color1 {
+	background-color: #F2D367;
+}
+.color2 {
+	background-color: #87A3E3;
+}
+.color3 {
+	background-color: #DB4D48;
+}
+.color4 {
+	background-color: #fff;
+}
+.selected {
+	box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.5);
+}
+
+
+
+/***************************
+ROWS
+****************************/
+
+.row1 {
+	height: 20%;
+}
+.row2 {
+	height: 35%;
+}
+.row3 {
+	height: 20%;
+}
+.row4 {
+	height: 25%;
+}
+.row1, .row2, .row3 {
+	border-bottom: 10px solid black;
+}
+
+
+
+/***************************
+COLUMNS
+****************************/
+
+.col1 {
+	width: 20%;
+}
+.col2 {
+	width: 40%;
+}
+.col3 {
+	width: 15%;
+}
+.col4 {
+	width: 25%;
+}
+.col1, .col2, .col3, .col4 {
+	height: 100%;
+	float: left;
+}
+.col1, .col2, .col3 {
+	border-right: 10px solid black;
+}
